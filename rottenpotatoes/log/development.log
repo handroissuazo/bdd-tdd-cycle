@@ -1,0 +1,4 @@
+DEPRECATION WARNING: config.active_record.whitelist_attributes is deprecated and have no effect. Remove its call from the configuration. (called from block in tsort_each at /home/alejandro/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+DEPRECATION WARNING: config.active_record.whitelist_attributes is deprecated and have no effect. Remove its call from the configuration. (called from block in tsort_each at /home/alejandro/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/tsort.rb:226)

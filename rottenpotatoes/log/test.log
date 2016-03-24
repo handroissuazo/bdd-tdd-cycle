@@ -1,0 +1,688 @@
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x1fe4178 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-22 23:06:24.810669"], ["updated_at", "2016-03-22 23:06:24.810669"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 55ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0xfff4b0 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0xfff4b0%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x2b55250 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 19:13:28.113690"], ["updated_at", "2016-03-24 19:13:28.113690"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 40ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x29f0c5c @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x29f0c5c%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x23f8124 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x23f8124%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x24c9fbc @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 19:16:28.796106"], ["updated_at", "2016-03-24 19:16:28.796106"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x1b82dc8 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x1b82dc8%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x1c77cc4 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 19:19:21.743050"], ["updated_at", "2016-03-24 19:19:21.743050"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 14ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x24073a4 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 19:23:59.159232"], ["updated_at", "2016-03-24 19:23:59.159232"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x21ba5d8 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x21ba5d8%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x246de4c @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x246de4c%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x254f568 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 19:26:32.084843"], ["updated_at", "2016-03-24 19:26:32.084843"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x25c7518 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x25c7518%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x21d219c @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 19:38:13.478765"], ["updated_at", "2016-03-24 19:38:13.478765"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x2b97df8 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 20:00:26.457427"], ["updated_at", "2016-03-24 20:00:26.457427"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x13d7b28 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x13d7b28%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x21246c8 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 20:03:15.450549"], ["updated_at", "2016-03-24 20:03:15.450549"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x1bff698 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x1bff698%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"movies"=>"#[RSpec::Mocks::Mock:0x27f9098 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-03-24 20:04:02.821518"], ["updated_at", "2016-03-24 20:04:02.821518"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/movies
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+Redirected to http://test.host/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/movies
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/edit.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#findWithSameDirector as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/findWithSameDirector.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MoviesController#update as HTML
+  Parameters: {"movie"=>"#[RSpec::Mocks::Mock:0x1550c34 @name=Movie(id: integer, title: string, rating: string, description: text, release_date: datetime, created_at: datetime, updated_at: datetime, director: string)]", "id"=>"1"}
+Redirected to http://test.host/movies/%23%5BRSpec::Mocks::Mock:0x1550c34%20@name=Movie(id:%20integer,%20title:%20string,%20rating:%20string,%20description:%20text,%20release_date:%20datetime,%20created_at:%20datetime,%20updated_at:%20datetime,%20director:%20string)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
